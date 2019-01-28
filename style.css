@@ -1,0 +1,433 @@
+/*   
+Theme Name: julif-blog_theme
+*/
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{
+	margin: auto 0px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    background-color: #1c2127;
+}
+/*//////////////////////////////////////////// navbar //////////////////////////////////////////////////*/
+nav{
+    background-color: #111c29;
+    display: -webkit-box;
+    width: 100%;
+    line-height: 50px;
+}
+nav #main_nav_content {
+    position: relative;
+    display: -webkit-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    height: 50px;
+}
+.nav_brand{
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.nav_content_right{
+    position: absolute;
+    right:  0;
+     display: -webkit-box;
+}
+.nav_list{    
+        list-style: none;
+     display: contents; 
+   
+    width: auto;
+
+
+}
+.nav_list a:hover{    
+   
+}
+
+.nav_links{    margin-left: 20px;    display: flex;}
+.nav_links a{
+    display: -webkit-inline-box;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #909090;
+    font-weight: 700;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+}
+.dropdown:hover .dropbtn,.nav_links a:hover{
+       color: #e2830d;
+}
+nav .nav_links span{ font-size: 10px; }
+nav .active{
+    background-color: #e2830d;
+    color: #ececec;
+}
+nav .active:hover{
+    color: #ececec;
+}
+nav .unactive{
+ background-color: transparent!important;
+ color: #3f4a58 !important;
+     cursor: default;
+}
+
+li ul {
+    display: none;
+}
+li ul li a {
+
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li :hover + .nav_dropdown, .nav_dropdown:hover {
+    display: block;
+}
+ .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+       display: -webkit-inline-box;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #909090;
+    font-weight: 700;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+}
+ .nav_dropdown{
+    /* display: block; */
+    
+    background-color: aliceblue;
+    position: absolute;
+    list-style: navajowhite;
+    list-style: none;
+    text-align: -webkit-left;
+    padding: 0px;
+    overflow: hidden;
+          box-shadow: -4px 5px 6px 6px #0000001f;    margin-top: -2px;    top: 50px; z-index: 50;
+}
+.nav_dropdown a{color: black;     font-weight: 600;font-size: 16px;   margin-left: 0px; width: 100%;}
+.nav_dropdown a:hover {   background-color: #1b1b1b24;
+    color: black;}
+
+    .nav_socialinks{    padding-left: 10px;    margin-left: 20px;    cursor: default;
+    padding-right: 10px; display: flex;}
+
+.nav_socialinks a{    /* margin-right: 10px;*/
+    color: #909090;
+    /* background-color: aquamarine; */
+   /* padding-right: 5px;
+    padding-left: 5px;*/
+    display: -webkit-inline-box;}
+/*    .nav_socialinks a:hover{    
+    color: #e2830d;
+
+}*/
+  .nav_socialinks a i{  line-height: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+} 
+.fa-twitter:hover{    color: #2daae2 !important;}
+.fa-facebook-square:hover{    color: #4064ac !important;}
+.fa-instagram:hover{  
+      background: -webkit-linear-gradient(#c11bff,#ffc11b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+  .fa-github:hover{color: white!important; }
+
+
+.nav_list .nav_links{
+    margin-left: 0px !important;
+}
+.nav_theme{
+        cursor: pointer;
+    /* margin-top: 25px; */
+    /* font-size: 18px; */
+    /* width: 20px; */
+    background-color: black;
+    color: #e2830d;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 50px;
+    }
+        .nav_hamburger{      cursor: pointer;
+    /* margin-top: 25px; */
+    font-size: 18px;
+    /* width: 20px; */
+    /* background-color: black; */
+    color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: none;
+}
+#panel{ display: inherit;}
+  .nav_wrapper{    background-color: #111c29;
+    display: -webkit-box;}
+
+    @media only screen and (max-width: 750px) {
+         .nav_hamburger{display: inherit;  }
+        .nav_content_right {
+        position: initial;
+ 
+}
+#panel{ display: none;}
+  .nav_wrapper {
+   
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;z-index: 40;
+        display: inline-block;
+
+       
+}
+.nav_list {
+    /* list-style: none; */
+    display: contents;
+    /* display: block; */
+    width: 100%;
+    text-align: center;
+    /* display: contents; */
+}
+.nav_list a{    text-align: -webkit-center;
+    display: -webkit-box;     margin-left: 0px;       width: -webkit-fill-available; }
+    .dropdown{ cursor: pointer; }
+    ul li :hover + .nav_dropdown, .nav_dropdown:hover {
+    display: block;
+    position: inherit;
+}
+.nav_links{    text-align: center;
+    margin-left: 0px;    justify-content: center;    display: block;
+}
+.nav_socialinks{    text-align: center;
+    margin-left: 0px;
+    padding-right: 0px;
+    background-color: black;display: inherit;
+}
+.nav_socialinks a{padding: 10px;display: initial;}
+.nav_theme{    position: absolute;
+    right: 0px;
+}
+  
+}
+/*//////////////////////////////////////////// content //////////////////////////////////////////////////*/
+#content{    
+    padding-bottom: 20px;     
+    background-color: white;
+    overflow: hidden;
+}
+#content a{     
+    font-weight: 700; 
+}
+
+
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+    }
+/*..............................para guttemberg ..........................*/
+/*centra el bloque de embed video */
+.wp-block-embed-vimeo{    
+	max-width: 1200px;    
+	width: 90%;
+    margin: 0px auto;
+}
+.cp_embed_wrapper{    
+    max-width: 1200px;    
+    width: 90%;
+    margin: 0px auto;
+}
+.wp-block-embed__wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.wp-block-embed__wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*centra el bloque de imagen*/
+.wp-block-image {
+    margin-bottom: 1em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100%;
+    max-width: 1200px !important;
+}
+
+.wp-block-image figcaption {
+    font-size: 16px  !important;
+}
+.wp-block-code{
+  
+   
+}
+#content ul, #content li ,em,a,p,h2,h3,hr,.wp-block-gallery,.wp-block-image{
+	max-width: 1200px;   
+	width: 95%;
+    margin: 0px auto;
+}
+
+p,#content ul,hr,h1,h2,h3{   
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3,h1,h2{
+	font-family: "proxima-nova",sans-serif;
+}
+#content li,p{
+	font-family: "proxima-nova",sans-serif;
+	font-size: 17px;
+    line-height: 1.5;
+    color: #444;
+   
+}
+blockquote {
+    color: #737373;
+    font-weight: 400;
+    margin: 2rem 0;
+    padding: 2rem;
+    font-size: 1.05rem;
+    background-color: #e4e4e4;
+    line-height: 1.7;
+    font-family: Georgia;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+blockquote p{  
+	    border-left: 10px solid #868181;
+    padding-left: 25px; 
+        font-size: 20px;
+     }
+ 
+
+cite {
+       display: block;
+    /* margin-top: 1rem; */
+    /* font-size: 1rem; */
+    text-align: right;
+    /* font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif; */
+    color: #000000;
+        max-width: 1200px;
+    margin: 0px auto;
+    font-family: sans-serif;
+}
+/*embed, iframe, object {
+    max-width: 100%;
+}*/
+figure {
+   /* margin: 0;*/    text-align: center;
+
+}
+
+
+.blocks-gallery-item img {
+ /*   height: 100%;*/
+    flex: 1;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.blocks-gallery-item figure {
+    /* margin: 0; */
+   /* height: 100%;*/
+}
+.wp-block-gallery .blocks-gallery-item {
+    /*margin: 0 16px 16px 0;*/
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.wp-block-gallery .blocks-gallery-item {
+    width: calc((100% - 16px)/ 2);
+}
+.wp-block-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+.wp-block-image img{  width: 100% !important;}
+.wp-block-gallery.is-cropped .blocks-gallery-item img {
+   width: 100% !important;
+}
+.wp-block-button__link {
+    background-color: #32373c;
+    border: none;
+    border-radius: 28px;
+    box-shadow: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+    overflow-wrap: break-word;
+    color: #fff;
+        background-color: #3072b9 !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    border: 1px solid transparent !important;
+    padding: .375rem .75rem !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    padding: .5rem 1rem !important;
+    font-size: 1.25rem !important;
+    line-height: 1.5 !important;
+    border-radius: .3rem !important;
+        width: auto !important;
+}
+.wp-block-image figcaption{  font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif !important; }
+.wp-block-button__link:hover {
+  
+    background-color: #1770d0 !important;
+
+}
+.wp-block-button {
+    color: #fff;
+    margin-bottom: 1.5em;
+    max-width: 90%;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+ @media only screen and (max-width: 1000px) {
+p, #content ul,#content li{    width: 90%;}
+.wp-block-embed-vimeo {width: 95%;}
+  }

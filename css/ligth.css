@@ -1,0 +1,43 @@
+ nav{ background-color: #1e2327 }
+ .nav_wrapper{   background-color: #1e2327;}
+ body{background-color: #1e2327}
+ #content {background-color: #f6f7fb;}
+ footer{background-color: #1e2327}
+
+ 
+/*aplicar color a los bullet points de la listas exepto en  wp-block-gallery*/
+/*ul:not(.wp-block-gallery) li::before {
+  content: "\2022";
+ color: #616a82;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+*/
+a{ color: #000000;}
+
+h1{color: #052142;}
+#container h1{ color: white;font-size: 3em; }
+#container li{       color: white; background-color:#596fa0;}
+/*#container h3{ color: white; }*/
+.banner h1{color:#e6f1fd;}
+h2{  color: #0f1d29;}
+h3{ color:#5a8ab3;}
+p{       color: #000000;}
+
+
+.prettyprint {
+    background: #293546 !important;  }
+    .banner{
+    background-color: #596fa0;
+    }    #btn_theme{
+  color: #596fa0;
+}
+#content li{    color: black;}
+.comentario{
+ color: #586179;
+}
+.destacado{
+  color: #3f86c5;
+}

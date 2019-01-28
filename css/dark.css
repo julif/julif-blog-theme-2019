@@ -1,0 +1,102 @@
+ 
+nav{background-color: #1a1e27;}
+
+body {background-color:  #111c29; }
+#content {background-color: #333b52;}
+footer{background-color:  #1a1e27;}
+
+/*aplicar color a los bullet points de la listas exepto en  wp-block-gallery*/
+/* ul:not(.wp-block-gallery) li::before {
+  content: "\2022";
+ color: #616a82;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}*/
+
+/* body{
+  margin: auto;
+  background-color: #333b52;
+  color: red;
+
+}*/
+
+a{ color: #fbfdff;}
+h1{color: #f3f3f3;}
+#container h1{ color: white; font-size: 3em;}
+#container li{       color: white; background-color: #d68653;}
+
+.banner h1{color: black;}
+h2{color:  #7499b9;}
+h3{    color:#7499b9;}
+p{    color: #acb7c4;}
+
+.prettyprint {
+    background: #222631 !important;  }
+
+ .banner{
+    /* background-color: #2b3348;*/
+     background-color:  #222631;
+     background-color: #fb9528;
+    }
+    #btn_theme{
+  color: #fb9528;
+}
+.comentario{
+ color: #586179;
+}
+.destacado{
+  color: #ffffff;
+}
+
+
+.wp-block-image figcaption {
+    margin-top: .5em;
+    margin-bottom: 1em;
+    color: #7499b9 !important;
+    text-align: center;
+    font-size: 13px;
+}
+blockquote {background-color: #252b3e;}
+blockquote p {border-left: 10px solid #ffffff;}
+cite { color: #ffffff !important;}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #7499b97a;
+    padding: 0; 
+}
+
+li {    color: #fff ;}
+
+
+
+
+
+/*.....................................*/
+
+h2 ,h3{
+    color: #2face0;
+}
+#content {
+    background-color: #253447;
+}
+
+nav,footer,body,.nav_wrapper{ 
+  background-color: #111c29;
+ /* background-color: #1c2939;*/
+}
+.prettyprint {
+    background: #182635 !important;
+}
+#content li{    color: #fff;}
+p {
+    color: #91a6bf;
+}
+blockquote {
+    background-color: #1b283a;
+}
